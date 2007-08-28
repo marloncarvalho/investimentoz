@@ -1,0 +1,47 @@
+<bancos>
+	<banco nome="Banco do Brasil" numero="001">
+		<fundos>
+			<fundo nome="BB Curto Prazo Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=42"/>
+			<fundo nome="BB Curto Prazo 50 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=44"/>
+			<fundo nome="BB Referenciado DI Social 200" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=24"/>
+			<fundo nome="BB Referenciado DI CPMF Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=22"/>
+			<fundo nome="BB Referenciado DI Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=29"/>
+			<fundo nome="BB Referenciado DI LP Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=163"/>
+			<fundo nome="BB Referenciado DI 10 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=52"/>
+			<fundo nome="BB Referenciado DI LP 50 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=28"/>
+			<fundo nome="BB Referenciado DI LP 200 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=66"/>
+			<fundo nome="BB Renda Fixa CPMF Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=12"/>
+			<fundo nome="BB Renda Fixa Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=26"/>
+			<fundo nome="BB Renda Fixa LP 10 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=139"/>
+			<fundo nome="BB Renda Fixa LP Índice de Preço 20 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=33"/>
+			<fundo nome="BB Renda Fixa Bonus Longo Prazo" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=162"/>
+			<fundo nome="BB Renda Fixa 25 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=1"/>
+			<fundo nome="BB Renda Fixa LP 50 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=13"/>
+			<fundo nome="BB Renda Fixa LP Premium 50 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=16"/>
+			<fundo nome="BB Renda Fixa LP 200 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=60"/>
+			<fundo nome="BB Renda Fixa LP Premium 200 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=615"/>
+			<fundo nome="BB Multimercado Conservador LP Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=20"/>
+			<fundo nome="BB Multimercado Moderado LP 10 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=169"/>
+			<fundo nome="BB Multimercado Arrojado LP 10 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=617"/>
+			<fundo nome="BB Ações Ibovespa Indexado" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=4"/>
+			<fundo nome="BB Ações Ibovespa Ativo" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=9"/>
+			<fundo nome="BB Ações IBrX" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=6"/>
+			<fundo nome="BB Ações Multi Setorial Ativo" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=149"/>
+			<fundo nome="BB Ações Exportação" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=148"/>
+			<fundo nome="BB Ações Small Caps" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=146"/>
+			<fundo nome="BB Ações Índice de Sustentabilidade Empresarial" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=137"/>
+			<fundo nome="BB Ações Energia" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=27"/>
+			<fundo nome="BB Ações Telecomunicações" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=25"/>
+			<fundo nome="BB Ações Embraer" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=36"/>
+			<fundo nome="BB Ações Petrobras" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=55"/>
+			<fundo nome="BB Ações Vale do Rio Doce" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=155"/>
+			<fundo nome="BB Ações Dividendos" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=147"/>			
+			<fundo nome="BB Ações PIBB" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=160"/>
+			<fundo nome="BB Cambial Euro LP Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=150"/>
+			<fundo nome="BB Cambial Dólar LP Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=47"/>
+			<fundo nome="BB Cambial Dólar LP 20 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=14"/>			
+			<fundo nome="BB Cambial Dólar LP 100 mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=67"/>
+			<fundo nome="BB Dívida Externa LP Mil" endereco="https://www11.bb.com.br/site/rentaFundos/GFI9.jsp?fundo=15"/>
+		</fundos>
+	</banco>
+</bancos>
