@@ -3,10 +3,37 @@ package net.marloncarvalho.investimentos.entidades;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Banco {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+/**
+ * Classe que representa um Banco.
+ * 
+ * @author Marlon Silva Carvalho
+ */
+@Entity
+@Table(name="INVEST_BANCOS")
+@NamedQueries(
+		{
+			@NamedQuery(name="bancosPorNome", query="from Banco banco where fundo.nome = :nome")
+		}
+	)
+public class Banco extends EntidadePersistente {
 	public static String BANCODOBRASIL = "001";
+
+	@Column(name="NOME")
 	private String nome;
+
+	@Column(name="NUMERO")
 	private String numero;
+
+	@OneToMany
+	@JoinColumn(name="ID_BANCO")
 	private Map<String,Fundo> fundos = new HashMap<String,Fundo>();
 	
 	/**

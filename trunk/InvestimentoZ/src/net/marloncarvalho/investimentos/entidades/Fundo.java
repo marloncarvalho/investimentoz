@@ -3,10 +3,41 @@ package net.marloncarvalho.investimentos.entidades;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Fundo {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+/**
+ * Classe que representa um fundo de Investimento.
+ * 
+ * @author Marlon Silva Carvalho
+ */
+@Entity
+@Table(name="INVEST_FUNDOS")
+@NamedQueries(
+		{
+			@NamedQuery(name="fundosPorNome", query="from Fundo fundo where fundo.nome = :nome")
+		}
+	)
+public class Fundo extends EntidadePersistente {
+	
+	@Column(name="NOME")
 	private String nome;
+	
+	@OneToMany
+	@JoinColumn(name="ID_FUNDO")
 	private Collection<Cota> cotas = new ArrayList<Cota>();
+	
+	@Column(name="URL")
 	private String url;
+
+	@ManyToOne
+	@JoinColumn(name="ID_BANCO")
 	private Banco banco;
 	
 	/**
