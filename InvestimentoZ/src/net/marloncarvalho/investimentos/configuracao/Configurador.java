@@ -17,6 +17,11 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+/**
+ * Classe responsável em realizar a configuração inicial do extrator de cotas.
+ * 
+ * @author Marlon Silva Carvalho
+ */
 @SuppressWarnings("all")
 public class Configurador {
 	private DOMParser parser = new DOMParser();

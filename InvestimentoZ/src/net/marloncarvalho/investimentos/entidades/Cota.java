@@ -2,8 +2,23 @@ package net.marloncarvalho.investimentos.entidades;
 
 import java.util.Date;
 
-public class Cota {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * Classe que representa uma Cota de um Fundo de Investimento.
+ * 
+ * @author Marlon Silva Carvalho
+ */
+@Entity
+@Table(name="INVEST_COTAS")
+public class Cota extends EntidadePersistente {
+
+	@Column(name="DATA")
 	private Date data;
+
+	@Column(name="VALOR")
 	private Double valor;
 	
 	/**

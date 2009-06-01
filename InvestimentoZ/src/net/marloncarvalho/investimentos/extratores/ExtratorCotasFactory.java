@@ -12,6 +12,10 @@ public class ExtratorCotasFactory implements IExtratorCotasFactory {
 		return null;
 	}
 
+	public ExtratorCotas obterExtrator() {
+			return this.obterExtrator(IExtratorCotasFactory.BANCODOBRASIL);
+	}
+
 	public ExtratorCotas obterExtrator(String banco) throws Exception {
 		if ( banco.toLowerCase().equals("banco do brasil") || 
 				banco.toLowerCase().equals("banco brasil") || 
