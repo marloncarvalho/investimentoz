@@ -39,18 +39,29 @@ public class Configurador {
 	}
 
 	public Fundo obterFundoInvestimento(String nome) {
-		NodeList nodeListFundos = parser.getDocument().getElementsByTagName("fundo");
-		Fundo fundo = null;
-		for ( int indice = 0 ; indice < nodeListFundos.getLength() ; indice++ ) {
-			Node nodeFundo = nodeListFundos.item(indice);
-			if ( nodeFundo.getAttributes() != null && nodeFundo.getAttributes().getNamedItem("nome") != null && nodeFundo.getAttributes().getNamedItem("nome").getTextContent().equals(nome) ) {
-				fundo = new Fundo();
-				fundo.setNome(nodeFundo.getAttributes().getNamedItem("nome").getTextContent());
-				fundo.setUrl(nodeFundo.getAttributes().getNamedItem("endereco").getTextContent());
-				return fundo;
+		NodeList nodeListBancos = parser.getDocument().getElementsByTagName("banco");
+		for ( int indiceBancos = 0 ; indiceBancos < nodeListBancos.getLength() ; indiceBancos++ ) {
+			Node nodeBanco = nodeListBancos.item(indiceBancos);
+			if ( nodeBanco.getAttributes() != null && nodeBanco.getAttributes().getNamedItem("numero") != null ) {
+				Banco banco = new Banco();
+				banco.setNome(nodeBanco.getAttributes().getNamedItem("nome").getTextContent());
+				banco.setNumero(nodeBanco.getAttributes().getNamedItem("numero").getTextContent());
+				NodeList nodeListFundos = nodeBanco.getChildNodes().item(1).getChildNodes();
+				for ( int indiceFundos = 0 ; indiceFundos < nodeListFundos.getLength() ; indiceFundos++ ) {
+					Node nodeFundo = nodeListFundos.item(indiceFundos);
+					if ( ! nodeFundo.getNodeName().equals("fundo") )
+						continue;
+					if ( nodeFundo.getAttributes() != null && nodeFundo.getAttributes().getNamedItem("nome") != null && nodeFundo.getAttributes().getNamedItem("nome").getTextContent().equals(nome) ) {
+						Fundo fundo = new Fundo();
+						fundo.setNome(nodeFundo.getAttributes().getNamedItem("nome").getTextContent());
+						fundo.setUrl(nodeFundo.getAttributes().getNamedItem("endereco").getTextContent());
+						fundo.setBanco(banco);
+						return fundo;
+					}
+				}
 			}
 		}
-		return fundo;
+		return null;
 	}
 
 	public Banco obterBanco(String numero) throws SAXException, IOException {
@@ -69,6 +80,7 @@ public class Configurador {
 					Fundo fundo = new Fundo();
 					fundo.setNome(nodeFundo.getAttributes().getNamedItem("nome").getTextContent());
 					fundo.setUrl(nodeFundo.getAttributes().getNamedItem("endereco").getTextContent());
+					fundo.setBanco(banco);
 					banco.getFundos().put(fundo.getNome(), fundo);
 				}
 				return banco;

@@ -11,27 +11,27 @@ import java.util.Map;
  */
 final public class Criterio {
 	private String nomeConsulta;
-	private Integer quantidade;
-	private Integer registroInicial;
+	private int quantidade;
+	private int registroInicial;
 	private Map<String, Object> parametros = new HashMap<String, Object>();
 	
 	public void adicionarParametro(String chave, Object o) {
 		this.parametros.put(chave,o);
 	}
 
-	public Integer getQuantidade() {
+	public int getQuantidade() {
 		return quantidade;
 	}
 
-	public void setQuantidade(Integer quantidade) {
+	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
 
-	public Integer getRegistroInicial() {
+	public int getRegistroInicial() {
 		return registroInicial;
 	}
 
-	public void setRegistroInicial(Integer registroInicial) {
+	public void setRegistroInicial(int registroInicial) {
 		this.registroInicial = registroInicial;
 	}
 

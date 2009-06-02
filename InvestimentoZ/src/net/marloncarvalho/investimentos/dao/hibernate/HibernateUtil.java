@@ -2,6 +2,7 @@ package net.marloncarvalho.investimentos.dao.hibernate;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 /**
  * Classe utilitária para utilização do hibernate.
@@ -18,9 +19,7 @@ final public class HibernateUtil {
 	        	AnnotationConfiguration cfg = new AnnotationConfiguration();
 	            sessionFactory = cfg.configure().buildSessionFactory();
 	            //new SchemaExport(cfg).create(true, true);
-	            //new CargaInicial().carga();
 	        } catch (Throwable ex) {
-	            // Make sure you log the exception, as it might be swallowed
 	            ex.printStackTrace();
 	            throw new ExceptionInInitializerError(ex);
 	        }
