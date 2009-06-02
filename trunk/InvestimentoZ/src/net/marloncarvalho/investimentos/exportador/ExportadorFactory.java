@@ -1,5 +1,6 @@
 package net.marloncarvalho.investimentos.exportador;
 
+import net.marloncarvalho.investimentos.exportador.implementador.ExportadorBD;
 import net.marloncarvalho.investimentos.exportador.implementador.ExportadorTXT;
 import net.marloncarvalho.investimentos.exportador.implementador.ExportadorXML;
 
@@ -11,6 +12,8 @@ public class ExportadorFactory {
 				return new ExportadorTXT();
 			case Exportador.XML:
 				return new ExportadorXML();
+			case Exportador.BD:
+				return new ExportadorBD();
 		}
 		return null;
 	}

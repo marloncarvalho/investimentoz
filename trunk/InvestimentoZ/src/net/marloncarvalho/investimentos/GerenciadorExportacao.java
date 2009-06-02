@@ -42,14 +42,16 @@ public class GerenciadorExportacao {
 	}
 
 	public void exportarCotasFundo(int tipoExportacao, String nome) {
-/*		Banco b = new Banco();
-		b.setNumero(banco);
-*/		Fundo fundo = configurador.obterFundoInvestimento(nome);
-		//fundo.setBanco(b);
+		Fundo fundo = configurador.obterFundoInvestimento(nome);
 		ExtratorCotas extrator = new ExtratorCotasBancoBrasil();
 		fundo.setCotas(extrator.extrairCotas(fundo.getUrl()));
 		Exportador exportador = ExportadorFactory.getExportador(tipoExportacao);
 		exportador.exportar(fundo);
 	}
 
+	public static void main(String[] args) throws Exception {
+		GerenciadorExportacao ge = new GerenciadorExportacao();
+		ge.exportarCotasFundo(Exportador.BD, "BB Curto Prazo Mil");
+		
+	}
 }

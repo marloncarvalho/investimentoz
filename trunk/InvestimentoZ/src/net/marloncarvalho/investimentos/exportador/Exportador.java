@@ -6,6 +6,7 @@ import net.marloncarvalho.investimentos.entidades.Fundo;
 public interface Exportador {
 	public static int XML = 1;
 	public static int TXT = 2;
+	public static int BD = 3;
 
 	public void exportar(Banco banco);
 	public void exportar(Fundo fundo);
