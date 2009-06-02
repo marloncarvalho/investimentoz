@@ -7,5 +7,17 @@
 	<classpathentry kind="lib" path="libs/serializer.jar"/>
 	<classpathentry kind="lib" path="libs/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="libs/xml-apis.jar"/>
+	<classpathentry kind="lib" path="libs/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="libs/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="libs/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="libs/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate3.jar"/>
+	<classpathentry kind="lib" path="libs/javassist-3.4.GA.jar"/>
+	<classpathentry kind="lib" path="libs/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="libs/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="libs/postgresql-8.3-603.jdbc4.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-jdk14-1.5.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
